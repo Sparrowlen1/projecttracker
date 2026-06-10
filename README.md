@@ -1,6 +1,6 @@
 # project management tool
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?lines=howdy+my+viewer+here+is+a+detailed+guideline+for+my+project&center=true&vCenter=true&pause=1000&color=58A6FF&size=25" />
+  <img src="https://readme-typing-svg.demolab.com? lines=howdy+my+viewer+here+is+a+detailed+guideline+for+my+project&center=true&vCenter=true&pause=1000&color=58A6FF&size=25" />
 </p>
 
 ## Setup Instructions

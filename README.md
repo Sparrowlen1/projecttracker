@@ -9,7 +9,7 @@
 2. pipenv install --dev (installs all dependencies including dev)
 3. pipenv install (installs production packages)
 4. pipenv run pytest (run test using dev dependencies)
-5. pip install -r requirements.txt(install dependencies)
+5. pip install -r requirements.txt(install dependencies) 
 
 ## Disclaimer
 1. the below CLI commands are just examples try adding your own "User" and "Email" and perform the cli commands replacing "Sparrowlen's" with your own user name that you added for a clean and workable CLI with no errors, Have fun my fellow Sparrow Viewer
@@ -95,4 +95,7 @@ python main.py list-users
 2. prettytable: For formatted table output
 
 ## testing
-1. python -m unittest discover tests
+1. pipenv install pytest --dev
+2. pipenv run pytest
+3. pipenv run pytest tests/test_api.py (to run a single test)
+4. (use unittest alternatvely)python -m unittest tests.test_user.py (since iko kwa the tests folder)

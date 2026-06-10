@@ -36,4 +36,4 @@ class Project:
         return [task for task in self.tasks if task.status == status]
     
     def display_info(self):
-        return f"Project: {self.title} | Due: {self.due_date} | Tasks: {len(self.tasks)}"
+        return f"Howdy! Project: {self.title} | Due: {self.due_date} | Tasks: {len(self.tasks)}"

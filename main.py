@@ -159,7 +159,7 @@ class ProjectManagementCLI:
             print(f"howdy Sparrow! Project '{project.title}' has no tasks.")
             return
         
-        headers = ['Task ID', 'Title', 'Status']
+        headers = ['Task ID', 'Title', 'Status Project']
         rows = []
         for task in project.tasks:
             rows.append([task.task_id, task.title, task.status])

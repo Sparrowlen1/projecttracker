@@ -76,7 +76,7 @@ python main.py list-users
 3. List tasks: python main.py list-tasks --user "Sparrow" --project "CLI Tool"
 
 ## features
-:: Create and manage users with unique IDs
+1. Create and manage users with unique IDs (asigned USR for user if user is the first entry then it will be USR 1)
 2. Add projects to specific users with due dates
 3. Assign tasks to projects and track completion status
 4. Persistent data storage using JSON

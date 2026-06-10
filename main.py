@@ -1,5 +1,4 @@
 import argparse
-import sys
 from models.user import User
 from models.project import Project
 from models.task import Task
@@ -49,7 +48,7 @@ class ProjectManagementCLI:
         user = User(args.name, args.email, user_id)
         self.users.append(user)
         self.save_data()
-        print(f"howdy Sparrow! User '{args.name}' added successfully with ID: {user_id}")
+        print(f"howdy Sparrow! User '{args.name}' added successfully with id: {user_id}")
     
     def list_users(self, args):
         if not self.users:
@@ -65,7 +64,7 @@ class ProjectManagementCLI:
     def add_project(self, args):
         user = self.find_user_by_name(args.user)
         if not user:
-            print(f"howdy Sparrow! User '{args.user}' not found.")
+            print(f"howdy Sparrow! User '{args.user}' not found my brother.")
             return
         
         existing_ids = [p.project_id for p in user.projects if p.project_id]
@@ -75,7 +74,7 @@ class ProjectManagementCLI:
         project = Project(args.title, args.description, due_date, project_id)
         user.add_project(project)
         self.save_data()
-        print(f"howdy Sparrow! Project '{args.title}' added to user '{user.name}' with ID: {project_id}")
+        print(f"howdy Sparrow! Project '{args.title}' added to username: '{user.name}' with ID: {project_id}")
     
     def list_projects(self, args):
         if args.user:
@@ -125,7 +124,7 @@ class ProjectManagementCLI:
         project = self.find_project_by_title(user, args.project)
         
         existing_ids = [t.task_id for t in project.tasks if t.task_id]
-        task_id = generate_id('TSK', existing_ids)
+        task_id = generate_id('Task', existing_ids)
         
         task = Task(args.title, task_assigned_to, 'pending', task_id)
         project.add_task(task)
@@ -156,7 +155,7 @@ class ProjectManagementCLI:
             return
         
         if not project.tasks:
-            print(f"howdy Sparrow! Project '{project.title}' has no tasks.")
+            print(f"howdy Sparrow! Project '{project.title}' has no tasks assigned to him yet.")
             return
         
         headers = ['Task ID', 'Title', 'Status Project']
@@ -201,7 +200,7 @@ class ProjectManagementCLI:
 def main():
     cli = ProjectManagementCLI()
     
-    parser = argparse.ArgumentParser(description='howdyt! Project Management CLI Tool')
+    parser = argparse.ArgumentParser(description='howdy Sparrow! Project Management CLI Tool')
     subparsers = parser.add_subparsers(dest='command', help='Available commands')
     
     user_parser = subparsers.add_parser('add-user', help='Add a new user')

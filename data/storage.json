@@ -24,7 +24,22 @@
         "name": "levi",
         "email": "levimuthui753@gmail.com",
         "user_id": "USR2",
-        "projects": []
+        "projects": [
+            {
+                "title": "CyberSecurity",
+                "description": "manager",
+                "due_date": "2026-10-30",
+                "project_id": "PRJ1",
+                "tasks": [
+                    {
+                        "title": " add a firewall mechanism",
+                        "assigned_to": null,
+                        "status": "pending",
+                        "task_id": "Task1"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "john",
@@ -33,6 +48,20 @@
         "projects": [
             {
                 "title": "web dev",
+                "description": "successful dev",
+                "due_date": "2026-06-17",
+                "project_id": "PRJ1",
+                "tasks": []
+            }
+        ]
+    },
+    {
+        "name": "Dante",
+        "email": "dante13@gmail.com",
+        "user_id": "USR4",
+        "projects": [
+            {
+                "title": "web manager",
                 "description": "successful dev",
                 "due_date": "2026-06-17",
                 "project_id": "PRJ1",

@@ -5,8 +5,11 @@
 
 ## Setup Instructions
 
-1. Clone the repository:
-2. pip install -r requirements.txt(install dependencies)
+1. Clone the repository
+2. pipenv install --dev (installs all dependencies including dev)
+3. pipenv install (installs production packages)
+4. pipenv run pytest (run test using dev dependencies)
+5. pip install -r requirements.txt(install dependencies)
 
 ## how to run cli commands
 python main.py [command]; that is 

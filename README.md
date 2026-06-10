@@ -1,24 +1,8 @@
 # project management tool
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 90" width="100%" height="100%">
-  <rect width="780" height="90" fill="#0d1117" rx="8" />
-  <text x="20" y="55" fill="#58a6ff" font-family="monospace" font-size="16">$</text>
-  
-  <g>
-    <clipPath id="reveal">
-      <rect x="40" y="20" width="0" height="40">
-        <animate attributeName="width" from="0" to="700" dur="5s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <g clip-path="url(#reveal)">
-      <text x="40" y="55" fill="#f0f6fc" font-family="monospace" font-size="16">howdy my viewer here is a detailed guideline for my project</text>
-    </g>
-  </g>
-  
-  <text x="40" y="55" fill="#f0f6fc" font-family="monospace" font-size="16">
-    <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" begin="5s" />
-    █
-  </text>
-</svg>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?lines=howdy+my+viewer+here+is+a+detailed+guideline+for+my+project&center=true&vCenter=true&pause=1000&color=58A6FF&size=25" />
+</p>
+
 ## Setup Instructions
 
 1. Clone the repository:

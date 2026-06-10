@@ -9,7 +9,7 @@
 2. pip install -r requirements.txt(install dependencies)
 
 ## how to run cli commands
-python main.py <command>; that is 
+python main.py [command]; that is 
 ### 1. Add a user
 python main.py add-user --name "Sparrowlen" --email "sparrowlen@example.com"
 
@@ -19,13 +19,13 @@ python main.py add-user --name "Sparrowlen2" --email "sparrowlen2@example.com"
 ### 3. List all users
 python main.py list-users
 
-### 4. Add a project for John
+### 4. Add a project for Sparrowlen
 python main.py add-project --user "Sparrowlen" --title "E-commerce Website" --description "Build a fully functional e-commerce platform" --due-date "2025-12-31"
 
-### 5. Add another project for John
+### 5. Add another project for Sparrowlen
 python main.py add-project --user "Sparrowlen" --title "Mobile App" --description "Develop iOS and Android app" --due-date "2025-03-15"
 
-### 6. Add project for Jane
+### 6. Add project for Sparrowlen2
 python main.py add-project --user "Sparrowlen2" --title "Database Migration" --description "Migrate legacy database to cloud" --due-date "2025-10-30"
 
 ### 7. List all projects

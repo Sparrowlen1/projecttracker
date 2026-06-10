@@ -15,7 +15,7 @@
 1. the below CLI commands are just examples try adding your own "User" and "Email" and perform the cli commands replacing "Sparrowlen's" with your own user name that you added for a clean and workable CLI with no errors, Have fun my fellow Sparrow Viewer
 
 ## how to run cli commands
-python main.py [command]; that is 
+python main.py [command can be add-user, list-users etc check below for guidance fellow developer]; that is 
 ### 1. Add a user
 python main.py add-user --name "Sparrowlen" --email "sparrowlen@example.com"
 
@@ -26,10 +26,10 @@ python main.py add-user --name "Sparrowlen2" --email "sparrowlen2@example.com"
 python main.py list-users
 
 ### 4. Add a project for Sparrowlen
-python main.py add-project --user "Sparrowlen" --title "E-commerce Website" --description "Build a fully functional e-commerce platform" --due-date "2025-12-31"
+python main.py add-project --user "Sparrowlen" --title "e-commerce Website" --description "Build a fully functional e-commerce platform" --due-date "2025-12-31"
 
 ### 5. Add another project for Sparrowlen
-python main.py add-project --user "Sparrowlen" --title "Mobile App" --description "Develop iOS and Android app" --due-date "2025-03-15"
+python main.py add-project --user "Sparrowlen" --title "Mobile App" --description "Develop iOS and Android app(flutter and dart)" --due-date "2025-03-15"
 
 ### 6. Add project for Sparrowlen2
 python main.py add-project --user "Sparrowlen2" --title "Database Migration" --description "Migrate legacy database to cloud" --due-date "2025-10-30"
@@ -41,17 +41,17 @@ python main.py list-projects
 python main.py list-projects --user "Sparrowlen"
 
 ### 9. Add tasks to a project
-python main.py add-task --project "E-commerce Website" --title "Design database schema"
+python main.py add-task --project "e-commerce Website" --title "Design database schema(hehe next module just a btw)"
 
 ### 10. Add more tasks
-python main.py add-task --project "E-commerce Website" --title "Implement user authentication"
-python main.py add-task --project "E-commerce Website" --title "Create shopping cart feature"
+python main.py add-task --project "e-commerce Website" --title "Implement user authentication"
+python main.py add-task --project "e-commerce Website" --title "Create shopping cart feature"
 
 ### 11. List tasks for a project
 python main.py list-tasks --user "Sparrowlen" --project "E-commerce Website"
 
 ### 12. Complete a task
-python main.py complete-task --title "Design database schema"
+python main.py complete-task --title "Design database schema(though is in the next module hehe)"
 
 ### 13. View tasks again to see status change
 python main.py list-tasks --user "Sparrowlen" --project "E-commerce Website"
@@ -72,14 +72,14 @@ python main.py list-users
 3. Delete user: python main.py delete-user --name "Sparrow"
 
 ### project management
-1. Add project: python main.py add-project --user "Sparrow" --title "CLI Tool" --description "Build a CLI tool" --due-date "2024-12-31"
+1. Add project: python main.py add-project --user "Sparrow" --title "Web dev" --description "Build a website" --due-date "2024-12-31"
 2. List projects: python main.py list-projects or python main.py list-projects --user "Sparrow"
-3. Search projects: python main.py search-projects --user "Sparrow" --term "CLI"
+3. Search projects: python main.py search-projects --user "Sparrow" --term "web"
 
 ### task management
-1. Add task: python main.py add-task --project "CLI Tool" --title "Implement parser"
+1. Add task: python main.py add-task --project "Web dev" --title "Implement parser"
 2. Complete task: python main.py complete-task --title "Implement parser"
-3. List tasks: python main.py list-tasks --user "Sparrow" --project "CLI Tool"
+3. List tasks: python main.py list-tasks --user "Sparrow" --project "web dev
 
 ## features
 1. Create and manage users with unique IDs (asigned USR for user if user is the first entry then it will be USR 1)

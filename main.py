@@ -135,7 +135,7 @@ class ProjectManagementCLI:
         for user in self.users:
             for project in user.projects:
                 for task in project.tasks:
-                    if task.title.lower() == args.title.lower():
+                    if task.title.strip().lower() == args.title.strip().lower():
                         task.mark_complete()
                         self.save_data()
                         print(f"howdy Sparrow! Task '{args.title}' Hereby marked as completed.")

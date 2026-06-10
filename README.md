@@ -85,10 +85,11 @@ python main.py list-users
 4. Persistent data storage using JSON
 5. Search functionality for projects
 6. Pretty table display for better readability
+7. inheritance applied with project.py, task,py, user.py inheriting from the base.py and applying a repr function and str function in all the models
 
 ## Dependencies
 1. python-dateutil: For flexible date parsing
 2. prettytable: For formatted table output
 
 ## testing
-:: python -m unittest discover tests
+1. python -m unittest discover tests

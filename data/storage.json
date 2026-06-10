@@ -15,6 +15,12 @@
                         "assigned_to": null,
                         "status": "pending",
                         "task_id": "TSK1"
+                    },
+                    {
+                        "title": "navbar design",
+                        "assigned_to": null,
+                        "status": "pending",
+                        "task_id": "Task1"
                     }
                 ]
             }
@@ -34,7 +40,7 @@
                     {
                         "title": " add a firewall mechanism",
                         "assigned_to": null,
-                        "status": "pending",
+                        "status": "completed",
                         "task_id": "Task1"
                     }
                 ]

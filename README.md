@@ -11,6 +11,9 @@
 4. pipenv run pytest (run test using dev dependencies)
 5. pip install -r requirements.txt(install dependencies)
 
+## Disclaimer
+1. the below CLI commands are just examples try adding your own "User" and "Email" and perform the cli commands replacing "Sparrowlen's" with your own user name that you added for a clean and workable CLI with no errors, Have fun my fellow Sparrow Viewer
+
 ## how to run cli commands
 python main.py [command]; that is 
 ### 1. Add a user

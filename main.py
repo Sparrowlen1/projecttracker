@@ -40,7 +40,7 @@ class ProjectManagementCLI:
     
     def add_user(self, args):
         if not validate_email(args.email):
-            print("howdyt! Invalid email format. Email must contain @ and .")
+            print("howdy Sparrow! Invalid email format. Email must contain @ and .")
             return
         
         existing_ids = [u.user_id for u in self.users if u.user_id]
@@ -49,11 +49,11 @@ class ProjectManagementCLI:
         user = User(args.name, args.email, user_id)
         self.users.append(user)
         self.save_data()
-        print(f"howdyt! User '{args.name}' added successfully with ID: {user_id}")
+        print(f"howdy Sparrow! User '{args.name}' added successfully with ID: {user_id}")
     
     def list_users(self, args):
         if not self.users:
-            print("howdyt! No users found.")
+            print("howdy Sparrow! No users found.")
             return
         
         headers = ['ID', 'Name', 'Email', 'Projects Count']
@@ -65,7 +65,7 @@ class ProjectManagementCLI:
     def add_project(self, args):
         user = self.find_user_by_name(args.user)
         if not user:
-            print(f"howdyt! User '{args.user}' not found.")
+            print(f"howdy Sparrow! User '{args.user}' not found.")
             return
         
         existing_ids = [p.project_id for p in user.projects if p.project_id]
@@ -75,17 +75,17 @@ class ProjectManagementCLI:
         project = Project(args.title, args.description, due_date, project_id)
         user.add_project(project)
         self.save_data()
-        print(f"howdyt! Project '{args.title}' added to user '{user.name}' with ID: {project_id}")
+        print(f"howdy Sparrow! Project '{args.title}' added to user '{user.name}' with ID: {project_id}")
     
     def list_projects(self, args):
         if args.user:
             user = self.find_user_by_name(args.user)
             if not user:
-                print(f"howdyt! User '{args.user}' not found.")
+                print(f"howdy Sparrow! User '{args.user}' not found.")
                 return
             
             if not user.projects:
-                print(f"howdyt! User '{user.name}' has no projects.")
+                print(f"howdy Sparrow! User '{user.name}' has no projects.")
                 return
             
             headers = ['Project ID', 'Title', 'Description', 'Due Date', 'Tasks']
@@ -102,7 +102,7 @@ class ProjectManagementCLI:
                                        project.due_date, len(project.tasks)])
             
             if not all_projects:
-                print("howdyt! No projects found.")
+                print("howdy Sparrow! No projects found.")
                 return
             
             headers = ['User', 'Project ID', 'Title', 'Due Date', 'Tasks']
@@ -119,7 +119,7 @@ class ProjectManagementCLI:
                 break
         
         if not user:
-            print(f"howdyt! Project '{args.project}' not found.")
+            print(f"howdy Sparrow! Project '{args.project}' not found.")
             return
         
         project = self.find_project_by_title(user, args.project)
@@ -130,7 +130,7 @@ class ProjectManagementCLI:
         task = Task(args.title, task_assigned_to, 'pending', task_id)
         project.add_task(task)
         self.save_data()
-        print(f"howdyt! Task '{args.title}' added to project '{project.title}' with ID: {task_id}")
+        print(f"howdy Sparrow! Task '{args.title}' added to project '{project.title}' with ID: {task_id}")
     
     def complete_task(self, args):
         for user in self.users:
@@ -139,24 +139,24 @@ class ProjectManagementCLI:
                     if task.title.lower() == args.title.lower():
                         task.mark_complete()
                         self.save_data()
-                        print(f"howdyt! Task '{args.title}' marked as completed.")
+                        print(f"howdy Sparrow! Task '{args.title}' Hereby marked as completed.")
                         return
         
-        print(f"howdyt! Task '{args.title}' not found.")
+        print(f"howdy Sparrow! Task '{args.title}' not found.")
     
     def list_tasks(self, args):
         user = self.find_user_by_name(args.user)
         if not user:
-            print(f"howdyt! User '{args.user}' not found.")
+            print(f"howdy Sparrow! User '{args.user}' not found.")
             return
         
         project = self.find_project_by_title(user, args.project)
         if not project:
-            print(f"howdyt! Project '{args.project}' not found for user '{user.name}'.")
+            print(f"howdy Sparrow! Project '{args.project}' not found for user '{user.name}'.")
             return
         
         if not project.tasks:
-            print(f"howdyt! Project '{project.title}' has no tasks.")
+            print(f"howdy Sparrow! Project '{project.title}' has no tasks.")
             return
         
         headers = ['Task ID', 'Title', 'Status']
@@ -168,17 +168,17 @@ class ProjectManagementCLI:
     def delete_user(self, args):
         user = self.find_user_by_name(args.name)
         if not user:
-            print(f"howdyt! User '{args.name}' not found.")
+            print(f"howdy Sparrow! User '{args.name}' not found.")
             return
         
         self.users.remove(user)
         self.save_data()
-        print(f"howdyt! User '{args.name}' deleted successfully.")
+        print(f"howdy Sparrow! User '{args.name}' deleted successfully.")
     
     def search_projects(self, args):
         user = self.find_user_by_name(args.user)
         if not user:
-            print(f"howdyt! User '{args.user}' not found.")
+            print(f"howdy Sparrow! User '{args.user}' not found.")
             return
         
         search_term = args.term.lower()
@@ -189,7 +189,7 @@ class ProjectManagementCLI:
                 matching_projects.append(project)
         
         if not matching_projects:
-            print(f"howdyt! No projects found matching '{args.term}' for user '{user.name}'.")
+            print(f"howdy Sparrow! No projects found matching '{args.term}' for user '{user.name}'.")
             return
         
         headers = ['Project ID', 'Title', 'Description', 'Due Date']

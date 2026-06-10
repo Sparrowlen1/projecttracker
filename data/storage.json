@@ -25,5 +25,19 @@
         "email": "levimuthui753@gmail.com",
         "user_id": "USR2",
         "projects": []
+    },
+    {
+        "name": "john",
+        "email": "john13@gmail.com",
+        "user_id": "USR3",
+        "projects": [
+            {
+                "title": "web dev",
+                "description": "successful dev",
+                "due_date": "2026-06-17",
+                "project_id": "PRJ1",
+                "tasks": []
+            }
+        ]
     }
 ]

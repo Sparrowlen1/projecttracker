@@ -1,66 +1,46 @@
-# Python Project Management CLI Tool
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="100%" height="100%">
+# project management tool
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 120" width="100%" height="100%">
   <defs>
-    <!-- Background Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-    
-    <!-- Blinking Cursor Animation -->
+    <clipPath id="typing">
+      <rect x="20" y="30" width="0" height="40">
+        <animate attributeName="width" from="0" to="480" dur="3s" begin="0.5s" fill="freeze" />
+      </rect>
+    </clipPath>
     <style>
       .cursor {
         animation: blink 1s step-end infinite;
       }
       @keyframes blink {
-        from, to { opacity: 1; }
+        0%, 100% { opacity: 1; }
         50% { opacity: 0; }
       }
     </style>
   </defs>
 
-  <!-- Terminal Window Background -->
-  <rect width="800" height="280" rx="12" fill="#1e1e2e" />
-  <rect width="800" height="280" rx="12" fill="none" stroke="#313244" stroke-width="2" />
-  
-  <!-- Top Bar -->
-  <rect width="800" height="40" rx="12" fill="#181825" />
-  <rect y="20" width="800" height="20" fill="#181825" /> <!-- Flatten bottom of top bar -->
+  <!-- terminal bg -->
+  <rect width="650" height="120" rx="8" fill="#0f0f17" stroke="#2a2a3a" stroke-width="1.5" />
 
-  <!-- Window Controls (Red, Yellow, Green) -->
-  <circle cx="30" cy="20" r="6" fill="#f38ba8" />
-  <circle cx="50" cy="20" r="6" fill="#fab387" />
-  <circle cx="70" cy="20" r="6" fill="#a6e3a1" />
+  <!-- top bar -->
+  <rect width="650" height="28" rx="8" fill="#181824" />
+  <rect y="14" width="650" height="14" fill="#181824" />
+  <circle cx="18" cy="14" r="5" fill="#ff5f56" />
+  <circle cx="34" cy="14" r="5" fill="#ffbd2e" />
+  <circle cx="50" cy="14" r="5" fill="#27c93f" />
 
-  <!-- Line 1: whoami -->
-  <text x="25" y="70" fill="#a6e3a1" font-family="'Courier New', 'Fira Code', monospace" font-size="14" font-weight="bold">user@arch:~$</text>
-  <text x="155" y="70" fill="#f9e2af" font-family="'Courier New', 'Fira Code', monospace" font-size="14">whoami</text>
+  <!-- prompt -->
+  <text x="15" y="68" fill="#5cd9a5" font-family="'Courier New', monospace" font-size="18" font-weight="bold">$</text>
 
-  <!-- Line 2: Response -->
-  <text x="25" y="95" fill="#a6e3a1" font-family="'Courier New', 'Fira Code', monospace" font-size="14" font-weight="bold">></text>
-  <text x="45" y="95" fill="#94e2d5" font-family="'Courier New', 'Fira Code', monospace" font-size="14">danny (Senior Python Developer / AI Engineer)</text>
+  <!-- typed message -->
+  <g clip-path="url(#typing)">
+    <text x="38" y="68" fill="#e2e2e8" font-family="'Courier New', monospace" font-size="18">Welcome to my project!</text>
+  </g>
 
-  <!-- Line 3: pwd -->
-  <text x="25" y="125" fill="#a6e3a1" font-family="'Courier New', 'Fira Code', monospace" font-size="14" font-weight="bold">user@arch:~$</text>
-  <text x="155" y="125" fill="#f9e2af" font-family="'Courier New', 'Fira Code', monospace" font-size="14">pwd</text>
-
-  <!-- Line 4: Response -->
-  <text x="25" y="150" fill="#a6e3a1" font-family="'Courier New', 'Fira Code', monospace" font-size="14" font-weight="bold">></text>
-  <text x="45" y="150" fill="#89b4fa" font-family="'Courier New', 'Fira Code', monospace" font-size="14">/home/danny/projects/ai-readme</text>
-
-  <!-- Line 5: python --version -->
-  <text x="25" y="180" fill="#a6e3a1" font-family="'Courier New', 'Fira Code', monospace" font-size="14" font-weight="bold">user@arch:~$</text>
-  <text x="155" y="180" fill="#f9e2af" font-family="'Courier New', 'Fira Code', monospace" font-size="14">python --version</text>
-
-  <!-- Line 6: Response -->
-  <text x="25" y="205" fill="#a6e3a1" font-family="'Courier New', 'Fira Code', monospace" font-size="14" font-weight="bold">></text>
-  <text x="45" y="205" fill="#f5c2e7" font-family="'Courier New', 'Fira Code', monospace" font-size="14">Python 3.12.1</text>
-
-  <!-- Line 7: Ready Prompt with Blinking Cursor -->
-  <text x="25" y="235" fill="#a6e3a1" font-family="'Courier New', 'Fira Code', monospace" font-size="14" font-weight="bold">user@arch:~$</text>
-  <text x="155" y="235" fill="#cdd6f4" font-family="'Courier New', 'Fira Code', monospace" font-size="14" class="cursor">█</text>
+  <!-- blinking cursor -->
+  <text x="38" y="68" fill="#e2e2e8" font-family="'Courier New', monospace" font-size="18" class="cursor">
+    <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" begin="3.5s" />
+    █
+  </text>
 </svg>
-
 ## Setup Instructions
 
 1. Clone the repository:

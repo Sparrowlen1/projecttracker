@@ -1,0 +1,29 @@
+[
+    {
+        "name": "sparrowlen",
+        "email": "sparrowlen13@gmail.com",
+        "user_id": "USR1",
+        "projects": [
+            {
+                "title": "Mobile dev",
+                "description": "electric company mobile dev",
+                "due_date": "2026-06-18",
+                "project_id": "PRJ1",
+                "tasks": [
+                    {
+                        "title": "scaffolding the project using flutter and dart in android studio",
+                        "assigned_to": null,
+                        "status": "pending",
+                        "task_id": "TSK1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "levi",
+        "email": "levimuthui753@gmail.com",
+        "user_id": "USR2",
+        "projects": []
+    }
+]

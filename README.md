@@ -93,6 +93,7 @@ python main.py list-users
 ## Dependencies
 1. python-dateutil: For flexible date parsing
 2. prettytable: For formatted table output
+3. pytest for tests(dev dependency)
 
 ## testing
 1. pipenv install pytest --dev

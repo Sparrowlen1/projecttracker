@@ -1,4 +1,4 @@
-# project management tool
+# project management tool through the CLI
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&pause=1200&color=36BCF7&center=true&vCenter=true&width=1000&lines=Howdy+Estimed+Viewer+Welcome+to+the+Project+Documentation;A+Step-by-Step+Guide;Built+with+Python" alt="Typing SVG" />
 </p>

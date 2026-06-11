@@ -8,8 +8,9 @@
 1. Clone the repository
 2. pipenv install --dev (installs all dependencies including dev)
 3. pipenv install (installs production packages)
-4. pipenv run pytest (run test using dev dependencies)
-5. pip install -r requirements.txt(install dependencies) 
+4. pipenv shell(activate virtual environment  )
+5. pipenv run pytest (run test using dev dependencies)
+6. pip install -r requirements.txt(install dependencies) 
 
 ## Disclaimer
 1. the below CLI commands are just examples try adding your own "User" and "Email" and perform the cli commands replacing "Sparrowlen's" with your own user name that you added for a clean and workable CLI with no errors, Have fun my fellow Sparrow Viewer
@@ -100,3 +101,13 @@ python main.py list-users
 2. pipenv run pytest
 3. pipenv run pytest tests/test_api.py (to run a single test)
 4. (use unittest alternatvely)python -m unittest tests.test_user.py (since iko kwa the tests folder)
+
+## Troubleshooting
+1. "Module not found" – Run pipenv install first, then use pipenv shell or pipenv run.
+2. Task not found when marking complete – Ensure the exact title (case‑insensitive) and that the task exists in a project. Use list-tasks to verify.
+3. nvalid email – Email must contain @ and ..
+
+## Acknowledgements
+1. Python Software Foundation
+2. Contributors to python-dateutil and prettytable
+3. Course instructor for OOP and CLI guidance

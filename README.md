@@ -48,13 +48,13 @@ python main.py add-task --project "e-commerce Website" --title "Implement user a
 python main.py add-task --project "e-commerce Website" --title "Create shopping cart feature"
 
 ### 11. List tasks for a project
-python main.py list-tasks --user "Sparrowlen" --project "E-commerce Website"
+python main.py list-tasks --user "Sparrowlen" --project "e-commerce Website"
 
 ### 12. Complete a task
 python main.py complete-task --title "Design database schema(though is in the next module hehe)"
 
 ### 13. View tasks again to see status change
-python main.py list-tasks --user "Sparrowlen" --project "E-commerce Website"
+python main.py list-tasks --user "Sparrowlen" --project "e-commerce Website"
 
 ### 14. Search projects
 python main.py search-projects --user "Sparrowlen2" --term "website"

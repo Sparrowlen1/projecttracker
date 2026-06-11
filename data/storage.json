@@ -74,5 +74,26 @@
                 "tasks": []
             }
         ]
+    },
+    {
+        "name": "phiona",
+        "email": "phiona@gmail.com",
+        "user_id": "USR5",
+        "projects": [
+            {
+                "title": "landmower",
+                "description": " landscaping",
+                "due_date": "2026-06-18",
+                "project_id": "PRJ1",
+                "tasks": [
+                    {
+                        "title": "maintain the flowerbeds",
+                        "assigned_to": null,
+                        "status": "completed",
+                        "task_id": "Task1"
+                    }
+                ]
+            }
+        ]
     }
 ]
